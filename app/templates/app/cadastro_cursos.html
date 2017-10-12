@@ -8,9 +8,9 @@
 
 <div class="row">
     <div class="col-md-12">
-        <p>{{ cursos[0] }}</p>
-        <p>{{ cursos[1] }}</p>
-        <p>{{ cursos[2] }}</p>
+        {% for curso in cursos: %}
+          <p>{{ curso }}</p>
+        {% endfor %}
     </div>
 </div>
 
