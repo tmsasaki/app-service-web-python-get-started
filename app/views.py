@@ -28,8 +28,8 @@ def contact(request):
         'app/contact.html',
         context_instance = RequestContext(request,
         {
-            'title':'Contact',
-            'message':'Your contact page.',
+            'title':'Contato',
+            'message':'Entre em contato conosco',
             'year':datetime.now().year,
         })
     )
@@ -43,7 +43,7 @@ def about(request):
         context_instance = RequestContext(request,
         {
             'title':'About',
-            'message':'Your application description page.',
+            'message':'Gerenciador de vestibulares',
             'year':datetime.now().year,
         })
     )
