@@ -6,12 +6,11 @@
     <h1>Cadastro de cursos</h1>
 </div>
 
-<div class="row">
-    <div class="col-md-12">
+<table class="table">
+    <tr><th>Nome do curso</th><th>Período</th><th>Faculdade</th></tr>
         {% for curso in cursos %}
-          <p>{{ curso }}</p>
+          <tr><td>{{ curso }}</td><td>Noturno</td><td>Faculdade Impacta</td></tr>
         {% endfor %}
-    </div>
-</div>
+</table>
 
 {% endblock %}
